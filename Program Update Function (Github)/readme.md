@@ -1,4 +1,4 @@
-                                                  **Python Program/Script Update function**
+                                                  Python Program/Script Update function
 
                                          Automated Updates using Github, requests and Webbrowser.
                   Useful Function if you are sharing your Programs with a lot of People and want to keep them Up-2-Date.
