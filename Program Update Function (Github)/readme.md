@@ -1,33 +1,14 @@
-                                                                        All in One Converter and Sorter
+                                                  Python Program/Script Update function
 
-                                                                Automated Working with Lists, Files, Strings
-                                                                  Many useful functions to work with data
-
-
-                                                                                 Features:
-                                                                  - Read file without converting in List
-                                                                  - Read multiple lines and save in 1 List
-                                                                  - Read lines and save each line in a List
-                                                                  
-                                                                        - Count letters in File
-                                                                         - Count words in File
-                                                                         - Count lists in File
-                                                                    
-                                                                       - Numerate words in file
-                                                                       - Numerate Lists in File
-                                                                                        
-                                                                   - Word seperator Maker & Changer
-                                                                             
-                                                                             
+                                         Automated Updates using Github, requests and Webbrowser.
+                  Useful Function if you are sharing your Programs with a lot of People and want to keep them Up-2-Date.
 
 
-                                                                                 Coming next:
-                                                                - Convert new lines in more than 1 list function
-                                                                 - Outputs if invalid Input on func choices
-                                                             - add write to file func after doing stuff ask user
-
-
-
-                                                                                 Thanks:
-                                                                            Anime Soundtracks,
-                                                                         Stackoverflow Community
+                                                               Features:
+                              - Checks for a float digit Version on a file located in a Github Repository
+                                   - Download this file with the Webbrowser Library and the Raw Url
+             
+                                            
+                                                                Thanks:
+                                                           Anime Soundtracks
+                                                         
