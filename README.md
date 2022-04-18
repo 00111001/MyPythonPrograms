@@ -1,5 +1,5 @@
 # MyPythonPrograms
-Collection of my finished Program's in Python
+Collection of my published Program's in Python
 
 - File/Program/Script Update Function v1
 
