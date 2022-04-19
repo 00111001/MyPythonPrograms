@@ -1,14 +1,12 @@
-                                                  Python Program/Script Update function
+                                                Python Video/Audio Downloader using Tkinter
 
-                                         Automated Updates using Github, requests and Webbrowser.
-                  Useful Function if you are sharing your Programs with a lot of People and want to keep them Up-2-Date.
-
-
-                                                               Features:
-                              - Checks for a float digit Version on a file located in a Github Repository
-                                   - Download this file with the Webbrowser Library and the Raw Url
+                                Some Functions i needed sometimes and i wanted to automate them for the future.
+          
+                                                              Features:
+                                                 - Highest Resolution Mp4 Download.
+                                                 - Good Soundquality Mp3 Download.
              
                                             
-                                                                Thanks:
-                                                           Anime Soundtracks
+                                                              Thanks:
+                                                         Anime Soundtracks
                                                          
