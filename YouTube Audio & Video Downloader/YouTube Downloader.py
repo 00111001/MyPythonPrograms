@@ -69,7 +69,7 @@ def download_audio():
     # Referencing our link to url
     url = YouTube(str(link.get()))
     # Download only Audio data
-    audio_file = url.streams.filter(only_audio=True, subtype='webm', abr='160kbps').first()
+    audio_file = url.streams.filter(only_audio=True, subtype='webm', abr='160kbps')
     # Start download
     audio_file.download()
     # Calling the Convert Data function
