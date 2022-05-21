@@ -47,10 +47,9 @@ def main_menu():
 
         if choice == "1":
             scan_website()  # Menu for converting sentences in List or smth else
-        elif choice == "2":
-            scan_ipaddress()  # Menu for counting Lists,Letters or words
         elif choice == "0":
             break
+            ####### FIX THIS
 
 #  Creating a function with the Parameters target and Port
 #  Delivers opened Port in the Input field
