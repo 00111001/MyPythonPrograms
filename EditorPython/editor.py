@@ -27,16 +27,11 @@ class MeinGUI:
         menubar.add_cascade(label="Bearbeiten", menu=bearbeitenmenü)  # Bearbeiten-Menü zur Menüleiste hinzufügen
         bearbeitenmenü.add_command(label="Rückgängig", command=self.rueckgaengig)
 
-        # Strg+Z für Rückgängig binden
-        fenster.bind("<Control-z>", self.rueckgaengig)
-
-        # tk.WORD bedeutet, dass der Text im Text-Widget am Ende eines Wortes umgebrochen wird,
-        # um sicherzustellen, dass Wörter nicht in der Mitte geteilt werden, wenn sie die rechte
-        # Seite des Widgets erreichen.
         self.text_widget = tk.Text(root, wrap=tk.WORD, width=148, height=37)
         self.text_widget.pack()
         self.text_widget.bind("<KeyRelease>", self.text_geaendert)
 
+        fenster.bind("<Control-z>", self.rueckgaengig) # Strg+Z für Rückgängig binden
         self.undo_stack = [self.text_widget.get("1.0", "end-1c")]
 
     def neu(self):
@@ -81,14 +76,10 @@ class MeinGUI:
             self.text_widget.insert(tk.END, letzter_zustand)
 
     def text_geaendert(self, event=None):
-        if event and event.keysym in ("Alt_L", "Alt_R", "Control_L", "Control_R", "Shift_L", "Shift_R"):
-            return
         aktueller_zustand = self.text_widget.get("1.0", "end-1c")  # Aktueller Text
-        if not self.undo_stack or aktueller_zustand != self.undo_stack[-1]:
-            # Nur speichern, wenn sich der Text geändert hat oder die Liste leer ist
+        if not self.undo_stack or aktueller_zustand != self.undo_stack[-1]: # Nur speichern, wenn sich der Text geändert hat oder die Liste leer ist
             self.undo_stack.append(aktueller_zustand)
-            # Hier den aktuellen Text sichern, bevor er geändert wird
-            self.text_widget.edit_separator()
+            self.text_widget.edit_separator() # Hier den aktuellen Text sichern, bevor er geändert wird
 
 # Funktion für Strg+Z
 def rueckgaengig_machen(event):
