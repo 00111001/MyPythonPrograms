@@ -25,11 +25,6 @@ class ShoppingPlanner:
         self.entry.bind('<Return>', self.add_item)
         self.listbox.bind('<Delete>', self.delete_selected)
 
-        # Konfiguriere das Raster, um sich beim Größenändern anzupassen
-        root.grid_rowconfigure(1, weight=1)
-        root.grid_columnconfigure(0, weight=1)
-        root.grid_columnconfigure(1, weight=1)
-
     def add_item(self,event=None):
         text = self.entry.get()
         if text:
